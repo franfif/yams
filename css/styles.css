@@ -1,0 +1,112 @@
+body {
+  background-color: #D3ECA7;
+}
+
+.logo {
+  height: 90px;
+}
+
+.title {
+  font-family: 'Gluten', cursive;
+  font-weight: 700;
+  font-size: 6rem;
+}
+
+.col {
+  padding: 0;
+}
+
+.game-board img {
+  height: 75px;
+}
+
+.roll-area {
+  border: 5px solid #212529;
+  height: 405px;
+  position: relative;
+}
+
+.rolling-dice {
+  margin: 12px;
+  left: 23%;
+  top: 35%;
+  position: relative;
+}
+
+.below-board {
+  display: inline-flex;
+}
+
+.keep-area {
+  border: 5px solid #212529;
+  position: relative;
+  text-align: center;
+  height: 85px;
+  margin: auto;
+  width: 470px;
+}
+
+.keep-dice {
+  display: inline;
+}
+
+.keep-dice img {
+  margin: 0 5px;
+}
+
+.active-dice:hover {
+  padding: 2px;
+}
+
+.inactive-dice {
+  display: none;
+}
+
+.inactive-dice:hover {
+  padding: 2px;
+}
+
+.btn-roll-dice, .btn-rules {
+  border: solid 6px black;
+  border-radius: 100%;
+  margin: 5px;
+  padding: 0;
+  display: inline-flex;
+}
+
+button img {
+  border-radius: 100%;
+}
+
+button {
+  box-shadow: 5px 5px 5px black;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+button:disabled {
+  opacity: .6;
+  box-shadow: none;
+}
+
+.combination td {
+  text-align: center;
+  color: red;
+}
+
+.combination td.locked {
+  color: black;
+  font-weight: bold;
+}
+
+.combination td.hide-zero {
+  color: rgba(0, 0, 0, 0);
+}
+
+.combination td:hover {
+  display: default;
+  color: black;
+  font-weight: bold;
+}
