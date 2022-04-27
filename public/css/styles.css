@@ -72,17 +72,16 @@ body {
   margin: 5px;
   padding: 0;
   display: inline-flex;
+  box-shadow: 5px 5px 5px black;
 }
 
 button img {
   border-radius: 100%;
 }
 
-button {
-  box-shadow: 5px 5px 5px black;
-}
+button {}
 
-button:active {
+.btn-roll-dice:active, .btn-rules:active {
   box-shadow: none;
 }
 
