@@ -30,7 +30,7 @@ class Die {
 
   toggleDie() {
     if (this.isActive) {
-      this.keepAreaHTML.innerHTML = "<img src='" + this.rollingDieHTML.src + "' class=''>";
+      this.keepAreaHTML.innerHTML = "<img src='" + this.rollingDieHTML.src + "' class='img-flex'>";
       this.rollingDieHTML.classList.replace("active-dice", "inactive-dice");
       this.isActive = false;
     } else {

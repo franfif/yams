@@ -33,29 +33,36 @@
 
   <section class="container">
     <div class="row">
-      <div class="game-board col-8">
+      <div class="game-board col-8 mx-1">
         <div class="roll-area row">
-          <div class="roll-area-1 col"><img id="rolling-dice-1" src="" class="rolling-dice active-dice" alt=""></div>
-          <div class="roll-area-2 col"><img id="rolling-dice-2" src="" class="rolling-dice active-dice" alt=""></div>
-          <div class="roll-area-3 col"><img id="rolling-dice-3" src="" class="rolling-dice active-dice" alt=""></div>
-          <div class="roll-area-4 col"><img id="rolling-dice-4" src="" class="rolling-dice active-dice" alt=""></div>
-          <div class="roll-area-5 col"><img id="rolling-dice-5" src="" class="rolling-dice active-dice" alt=""></div>
+          <div class="roll-area-1 col col-xs-6 col-md-2"><img id="rolling-dice-1" src=""
+              class="rolling-dice active-dice img-fluid" alt=""></div>
+          <div class="roll-area-2 col col-xs-6 col-md-2"><img id="rolling-dice-2" src=""
+              class="rolling-dice active-dice img-fluid" alt=""></div>
+          <div class="roll-area-3 col col-xs-6 col-md-2"><img id="rolling-dice-3" src=""
+              class="rolling-dice active-dice img-fluid" alt=""></div>
+          <div class="roll-area-4 col col-xs-6 col-md-2"><img id="rolling-dice-4" src=""
+              class="rolling-dice active-dice img-fluid" alt=""></div>
+          <div class="roll-area-5 col col-xs-6 col-md-2"><img id="rolling-dice-5" src=""
+              class="rolling-dice active-dice img-fluid" alt=""></div>
         </div>
         <hr>
-        <div class="below-board">
-          <div class="keep-area">
+        <div class="below-board row">
+          <div class="keep-area col-xs-12 col-md-8">
             <div class="keep-dice" id="keep-area-1"></div>
             <div class="keep-dice" id="keep-area-2"></div>
             <div class="keep-dice" id="keep-area-3"></div>
             <div class="keep-dice" id="keep-area-4"></div>
             <div class="keep-dice" id="keep-area-5"></div>
           </div>
-          <button type="button" class="btn-roll-dice">
-            <img src="images/button_roll_dice.png" alt="button-roll-dice">
-          </button>
-          <button type="button" class="btn-rules" data-bs-toggle="modal" data-bs-target="#rules">
-            <img src="images/button_rules.png" alt="button-rules">
-          </button>
+          <div class="col-xs-12 col-md-4">
+            <button type="button" class="btn-roll-dice">
+              <img src="images/button_roll_dice.png" alt="button-roll-dice">
+            </button>
+            <button type="button" class="btn-rules" data-bs-toggle="modal" data-bs-target="#rules">
+              <img src="images/button_rules.png" alt="button-rules">
+            </button>
+          </div>
         </div>
       </div>
       <!-- position-static d-block bg-secondary -->
@@ -105,7 +112,7 @@
       </div>
 
 
-      <div class="score-section col-3 ms-auto">
+      <div class="score-section col-3 ms-1">
         <div>
           <!-- <label class="my-1 mr-2" for="inlineFormCustomSelectPref">How many players?</label>
           <select class="custom-select" id="player-number">
@@ -118,102 +125,6 @@
           <!-- <button type="submit" class="btn btn-primary my-1">Submit</button> -->
 
           <table class="table table-sm table-bordered border border-2 border-dark">
-            <!-- <thead>
-              <tr>
-                <th scope="col">Combinations</th>
-                <th scope="col">Player 1</th>
-                <th scope="col">Player 2</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="combination number">
-                <th scope="row">Ones</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination number">
-                <th scope="row">Twos</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination number">
-                <th scope="row">Threes</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination number">
-                <th scope="row">Fours</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination number">
-                <th scope="row">Fives</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination number">
-                <th scope="row">Sixes</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="border-bottom border-2 border-dark">
-                <th scope="row">Total</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="border-bottom border-2 border-dark">
-                <th scope="row">Bonus</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Three of a kind</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Four of a kind</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Full House</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Small Straight</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Large Straight</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Chance</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="combination">
-                <th scope="row">Yam</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-              <tr class="border-bottom border-2 border-dark">
-                <th scope="row">Total</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr class="border-bottom border-2 border-dark">
-                <th scope="row">Grand Total</th>
-                <td class="p1"></td>
-                <td class="p2"></td>
-              </tr>
-            </tfoot> -->
           </table>
         </div>
       </div>
