@@ -2,6 +2,14 @@ body {
   background-color: #D3ECA7;
 }
 
+body.modal-open[style] {
+  padding-right: 0px !important;
+}
+
+.top-bar {
+  line-height: 1;
+}
+
 .logo {
   height: 90px;
 }
@@ -44,7 +52,7 @@ body {
   text-align: center;
   height: 85px;
   margin: auto;
-  width: 100%;
+  /* width: 100%; */
   padding: 0;
 }
 
@@ -70,18 +78,32 @@ body {
   padding: 2px;
 }
 
-.btn-roll-dice, .btn-rules {
+/* .btn-roll-dice, .btn-rules {
   border: solid 6px black;
   border-radius: 100%;
   margin: 5px;
   padding: 0;
   display: inline-flex;
   box-shadow: 5px 5px 5px black;
+  height: 100px;
+  width: 100px;
+  max-height: 100%;
+} */
+/* @media (max-width: 768px) {
+  .btn-roll-dice, .btn-rules {
+    height: 88px;
+    width: 88px;
+  }
+} */
+/* .btn-roll-dice {
+  background-image: url("/images/button_roll_dice.png");
 }
 
+.btn-rules {
+  background-image: url("/images/button_rules.png");
+} */
 button img {
   border-radius: 100%;
-  max-height: 100px;
 }
 
 button {}

@@ -33,86 +33,48 @@
 
   <section class="container">
     <div class="row">
-      <div class="game-board col-8 mx-1">
+      <div class="game-board col-8 row ms-1">
+        <!-- mx-1 -->
         <div class="roll-area row">
-          <div class="roll-area-1 col col-xs-6 col-md-2"><img id="rolling-dice-1" src=""
-              class="rolling-dice active-dice img-fluid" alt=""></div>
-          <div class="roll-area-2 col col-xs-6 col-md-2"><img id="rolling-dice-2" src=""
-              class="rolling-dice active-dice img-fluid" alt=""></div>
-          <div class="roll-area-3 col col-xs-6 col-md-2"><img id="rolling-dice-3" src=""
-              class="rolling-dice active-dice img-fluid" alt=""></div>
-          <div class="roll-area-4 col col-xs-6 col-md-2"><img id="rolling-dice-4" src=""
-              class="rolling-dice active-dice img-fluid" alt=""></div>
-          <div class="roll-area-5 col col-xs-6 col-md-2"><img id="rolling-dice-5" src=""
-              class="rolling-dice active-dice img-fluid" alt=""></div>
+          <!-- col-12 -->
+          <div class="roll-area-1 col"><img id="rolling-dice-1" src="" class="rolling-dice active-dice img-fluid" alt="">
+          </div> <!-- col-6 col-md-2 -->
+          <div class="roll-area-2 col"><img id="rolling-dice-2" src="" class="rolling-dice active-dice img-fluid" alt="">
+          </div>
+          <div class="roll-area-3 col"><img id="rolling-dice-3" src="" class="rolling-dice active-dice img-fluid" alt="">
+          </div>
+          <div class="roll-area-4 col"><img id="rolling-dice-4" src="" class="rolling-dice active-dice img-fluid" alt="">
+          </div>
+          <div class="roll-area-5 col"><img id="rolling-dice-5" src="" class="rolling-dice active-dice img-fluid" alt="">
+          </div>
         </div>
         <hr>
-        <div class="below-board row">
-          <div class="keep-area col-xs-12 col-md-8">
-            <div class="keep-dice" id="keep-area-1"></div>
-            <div class="keep-dice" id="keep-area-2"></div>
-            <div class="keep-dice" id="keep-area-3"></div>
-            <div class="keep-dice" id="keep-area-4"></div>
-            <div class="keep-dice" id="keep-area-5"></div>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <button type="button" class="btn-roll-dice">
-              <img src="images/button_roll_dice.png" alt="button-roll-dice">
-            </button>
-            <button type="button" class="btn-rules" data-bs-toggle="modal" data-bs-target="#rules">
-              <img src="images/button_rules.png" alt="button-rules">
-            </button>
-          </div>
+        <!-- <div class="below-board"> -->
+        <!-- col-12 col-sm-9 row -->
+        <div class="keep-area col-10 col-md-8 row">
+          <!-- col-12 col-md-8 -->
+          <div class="keep-dice col" id="keep-area-1"></div>
+          <div class="keep-dice col" id="keep-area-2"></div>
+          <div class="keep-dice col" id="keep-area-3"></div>
+          <div class="keep-dice col" id="keep-area-4"></div>
+          <div class="keep-dice col" id="keep-area-5"></div>
         </div>
-      </div>
-      <!-- position-static d-block bg-secondary -->
-      <div class="modal modal-sheet py-5 fade" tabindex="-1" role="dialog" id="rules" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-          <div class="modal-content rounded-6 shadow">
-            <div class="modal-header border-bottom-0">
-              <h4 class="modal-title">Rules</h4>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body py-0">
-
-              <h5>Upper section combinations</h5>
-              <p><b>Ones:</b> Get as many ones as possible.</br>
-                <b>Twos:</b> Get as many twos as possible.</br>
-                <b>Threes:</b> Get as many threes as possible.</br>
-                <b>Fours:</b> Get as many fours as possible.</br>
-                <b>Fives:</b> Get as many fives as possible.</br>
-                <b>Sixes:</b> Get as many sixes as possible.
-              </p>
-              <p>For the six combinations above the score for each of them is the sum of dice of the
-                right kind. E.g. if you get 1,3,3,3,5 and you choose Threes you will get 3*3 = 9 points. </p>
-              <!-- <p>The sum of all the
-                above combinations is calculated and if it is 63 or more, the player will get a bonus of 35 points. On
-                average a player needs three of each to reach 63, but it is not required to get three of each exactly, it is
-                perfectly OK to have five sixes, and zero ones for example, as long as the sum is 63 or more the bonus will
-                be awarded.</p> -->
-
-              <h5>Lower section combinations</h5>
-              <p><b>Three of a kind:</b> Get three dice with the same number. Points are the sum all dice (not just the three
-                of a kind).</br>
-                <b>Four of a kind:</b> Get four dice with the same number. Points are the sum all dice (not just the four of
-                a kind).</br>
-                <b>Full house:</b> Get three of a kind and a pair, e.g. 1,1,3,3,3 or 3,3,3,6,6. Scores 25 points.</br>
-                <b>Small straight:</b> Get four sequential dice: 1,2,3,4 or 2,3,4,5 or 3,4,5,6. Scores 30 points.</br>
-                <b>Large straight:</b> Get five sequential dice: 1,2,3,4,5 or 2,3,4,5,6. Scores 40 points.</br>
-                <b>Chance:</b> You can put anything into chance, it's basically like a garbage can when you don't have
-                anything else you can use the dice for. The score is simply the sum of the dice.</br>
-                <b>YAM:</b> Five of a kind. Scores 50 points. Well done!
-              </p>
-            </div>
-            <div class="modal-footer flex-column border-top-0">
-              <button type="button" class="btn btn-primary w-100 mx-0" data-bs-dismiss="modal">Close</button>
-            </div>
+        <div class="col-6 col-md-4 row">
+          <button type="button" class="btn btn-primary btn-roll-dice">Roll the dice</button>
+          <button type="button" class="btn btn-warning btn-rules" data-bs-toggle="modal"
+            data-bs-target="#rules">Rules</button>
+          <!-- <div class="col-6">
+            <button type="button" class=" btn-roll-dice"></button>
           </div>
+          <div class="col-6">
+            <button type="button" class=" btn-rules cell" data-bs-toggle="modal" data-bs-target="#rules"></button>
+          </div> -->
         </div>
+        <!-- </div> -->
       </div>
 
-
-      <div class="score-section col-3 ms-1">
+      <div class="score-section col-4">
+        <!--  col-3 ms-1 -->
         <div>
           <!-- <label class="my-1 mr-2" for="inlineFormCustomSelectPref">How many players?</label>
           <select class="custom-select" id="player-number">
@@ -128,7 +90,52 @@
           </table>
         </div>
       </div>
+    </div>
   </section>
+  <div class="modal modal-sheet py-5 fade" tabindex="-1" role="dialog" id="rules" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content rounded-6 shadow">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title">Rules</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <h5>Upper section combinations</h5>
+          <p><b>Ones:</b> Get as many ones as possible.</br>
+            <b>Twos:</b> Get as many twos as possible.</br>
+            <b>Threes:</b> Get as many threes as possible.</br>
+            <b>Fours:</b> Get as many fours as possible.</br>
+            <b>Fives:</b> Get as many fives as possible.</br>
+            <b>Sixes:</b> Get as many sixes as possible.
+          </p>
+          <p>For the six combinations above the score for each of them is the sum of dice of the
+            right kind. E.g. if you get 1,3,3,3,5 and you choose Threes you will get 3*3 = 9 points. </p>
+          <!-- <p>The sum of all the
+            above combinations is calculated and if it is 63 or more, the player will get a bonus of 35 points. On
+            average a player needs three of each to reach 63, but it is not required to get three of each exactly, it is
+            perfectly OK to have five sixes, and zero ones for example, as long as the sum is 63 or more the bonus will
+            be awarded.</p> -->
+
+          <h5>Lower section combinations</h5>
+          <p><b>Three of a kind:</b> Get three dice with the same number. Points are the sum all dice (not just the three
+            of a kind).</br>
+            <b>Four of a kind:</b> Get four dice with the same number. Points are the sum all dice (not just the four of
+            a kind).</br>
+            <b>Full house:</b> Get three of a kind and a pair, e.g. 1,1,3,3,3 or 3,3,3,6,6. Scores 25 points.</br>
+            <b>Small straight:</b> Get four sequential dice: 1,2,3,4 or 2,3,4,5 or 3,4,5,6. Scores 30 points.</br>
+            <b>Large straight:</b> Get five sequential dice: 1,2,3,4,5 or 2,3,4,5,6. Scores 40 points.</br>
+            <b>Chance:</b> You can put anything into chance, it's basically like a garbage can when you don't have
+            anything else you can use the dice for. The score is simply the sum of the dice.</br>
+            <b>YAM:</b> Five of a kind. Scores 50 points. Well done!
+          </p>
+        </div>
+        <div class="modal-footer flex-column border-top-0">
+          <button type="button" class="btn btn-primary w-100 mx-0" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
